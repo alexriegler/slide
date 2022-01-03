@@ -1,0 +1,16 @@
+{
+    "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg/master/scripts/vcpkg.schema.json",
+    "name": "slide",
+    "version": "0.0.1",
+    "maintainers":
+    [
+        "Alex Riegler"
+    ],
+    "description": "An implementation of std::ranges::views::slide based on P2442R1.",
+    "$reference": "https://wg21.link/p2442r1",
+    "dependencies":
+    [
+        "catch2"
+    ],
+    "builtin-baseline": "1085a57da0725c19e19586025438e8c16f34c890"
+}
