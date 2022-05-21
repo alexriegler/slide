@@ -2,12 +2,6 @@
 
 > An implementation of `std::ranges::views::slide` based on [P2442R1](https://wg21.link/p2442r1).
 
-## Table of contents
-* [About](#about)
-* [Compilers](#compilers)
-* [Code Examples](#code-examples)
-* [References](#references)
-
 ## About
 This project is an attempt at implementing `std::ranges::views::slide` based on [P2442R1: Windowing range adaptors: `views::chunk` and `views::slide`](https://wg21.link/p2442r1) by Tim Song. At the moment, it seems only bidirectional ranges, i.e., something like `std::vector`, work with the library (bidirectional ranges were the easiest case to implement). More work is needed to make it work for forward and input ranges (caching and iterator capability checks). The proposal paper by Tim Song goes into detail on how one might implement `views::slide` to work with forward and input ranges, but unfortunately my library writing skills and standardese are not up to par, yet. These are skills I will continue to develop and, someday, I might revisit this project to make it work in a similar fashion to the proposed C++23 version. Until then, I would not suggest using this project for anything serious but it might be a good reference for how a range adaptor is implemented.
 
